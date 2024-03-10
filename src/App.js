@@ -4,16 +4,16 @@ import './App.css';
 import Box from './component/Box';
 
 function App() {
-  const dispatch = useDispatch()
+  const action = useDispatch()
   const count = useSelector(state => state.count)
   const increase=()=>{
-    dispatch({type:'increment', payload:{num:5} }) // action 던지기
+    action({type:'increment', payload:{num:5} }) // action 던지기
   }
   const decrease=()=>{
-    dispatch({type:'decrement', })
+    action({type:'decrement', })
   }
   const login=()=>{
-    dispatch({type:'login', payload:{id:'ha' , password: 123 }})
+    action({type:'login', payload:{id:'ha' , password: 123 }})
   }
 
   return (<>

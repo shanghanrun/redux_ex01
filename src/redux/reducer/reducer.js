@@ -1,18 +1,18 @@
-let initialState = {
-	count: 0
-}
+// let initialState = {
+// 	count: 0
+// }
 
-function reducer(state=initialState,action){
-	console.log('action? : ', action )
-	if(action.type =='increment'){
-		return {...state, count:state.count+action.payload.num}
-	} else if(action.type =='login'){
-		return {...state, id: action.payload.id, password:action.payload.password}
-	} else if(action.type == 'decrement'){
-		return {...state, count: state.count -1}
-	}
+// function reducer(state=initialState,action){
+// 	console.log('action? : ', action )
+// 	if(action.type =='increment'){
+// 		return {...state, count:state.count+action.payload.num}
+// 	} else if(action.type =='login'){
+// 		return {...state, id: action.payload.id, password:action.payload.password}
+// 	} else if(action.type == 'decrement'){
+// 		return {...state, count: state.count -1}
+// 	}
 
-	return {...state};
-}
+// 	return {...state};
+// }
 
-export default reducer;
+// export default reducer;
