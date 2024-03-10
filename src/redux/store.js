@@ -1,12 +1,6 @@
 import { createStore } from 'redux'
 
-
 let store = createStore(reducer);
-
-
-// let initialState = {
-// 	count: 0
-// };
 
 function reducer(state={count:0},action){
 	console.log('action? : ', action )
@@ -17,9 +11,7 @@ function reducer(state={count:0},action){
 	} else if(action.type == 'decrement'){
 		return {...state, count: state.count -1}
 	}
-
 	return {...state};
 }
-
 
 export default store;
